@@ -1,0 +1,98 @@
+/* ===== Sidebar Desktop ===== */
+.sidebar {
+    width: 250px;
+    background: #ffffff;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-logo {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.nav-item {
+    margin-bottom: 15px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background: #d3d3d3;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-item.active .nav-link {
+    border: 2px solid red;
+    background: #d3d3d3;
+}
+
+.nav-link i {
+    margin-right: 12px;
+}
+
+/* ===== Page container Desktop ===== */
+.page-container {
+    margin-left: 250px;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ===== Responsive (Mobile) ===== */
+@media (max-width: 768px) {
+    .sidebar {
+        left: -250px;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        height: 100%;
+        background-color: #ffffff;
+        z-index: 1050;
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+
+    .page-container {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    #toggleSidebar {
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 1100;
+    }
+}
+
+  
+  

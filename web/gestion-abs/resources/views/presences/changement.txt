@@ -1,0 +1,54 @@
+web
+Route::get('/liste-presences', [App\Http\Controllers\PresenceController::class, 'index'])->name('liste.presences');
+Route::put('/presences/{id}/justifier', [PresenceController::class, 'justifier'])->name('presences.justifier');
+Route::put('/presences/{id}/nonjustifier', [App\Http\Controllers\PresenceController::class, 'nonJustifier'])->name('presences.nonjustifier');
+Route::get('/presences/export-pdf', [App\Http\Controllers\PresenceController::class, 'exportPdf'])->name('presences.export.pdf');
+
+
+dashboard
+<li class="nav-item {{ request()->routeIs('liste.presences') ? 'active' : '' }}">
+        <a href="{{ route('liste.presences') }}" class="nav-link">
+          <i class="bi bi-clipboard-check"></i> Listes des présences
+        </a>
+      </li>
+
+
+etudiant Model
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+
+class Etudiant extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'user_id',
+        'cne',
+        'groupe_id'
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    // public function groupe()
+    // {
+    //     return $this->belongsTo(Groupe::class);
+    // }
+
+
+    public function groupe()
+    {
+        return $this->belongsTo(Groupe::class, 'groupe_id');
+    }
+    public function presences()
+    {
+        return $this->hasMany(\App\Models\Presence::class, 'id_etudiant');
+    }
+}
+

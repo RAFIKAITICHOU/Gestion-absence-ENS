@@ -1,0 +1,25 @@
+[90m= [39m[34;4mIlluminate\Database\Eloquent\Collection[39;24m {#6544
+    [34mall[39m: [
+      [34;4mApp\Models\Etudiant[39;24m {#6540
+        [34mid[39m: [35m1[39m,
+        [34muser_id[39m: [35m1[39m,
+        [34mcne[39m: "[32mCNE001[39m",
+        [34mgroupe_id[39m: [35m1[39m,
+        [34mcreated_at[39m: "[32m2025-05-06 16:59:14[39m",
+        [34mupdated_at[39m: "[32m2025-05-06 16:59:14[39m",
+        [34muser[39m: [34;4mApp\Models\User[39;24m {#6551
+          [34mid[39m: [35m1[39m,
+          [34mname[39m: "[32mAli Etudiant[39m",
+          [34mprenom[39m: "[32mALAMI[39m",
+          [34memail[39m: "[32metudiantTest@example.com[39m",
+          [34mphoto[39m: "[32mimages/default.png[39m",
+          [34memail_verified_at[39m: [36mnull[39m,
+          #[33mpassword[39m: "[32m$2y$12$RGCS4Jrg/UQHxENvw5FxMuLS0Z0W8ESZGR2sF1L8VzA2OhPS4q2QK[39m",
+          #[33mremember_token[39m: [36mnull[39m,
+          [34mcreated_at[39m: "[32m2025-05-06 16:59:14[39m",
+          [34mupdated_at[39m: "[32m2025-05-06 16:59:14[39m",
+        },
+      },
+    ],
+  }
+
