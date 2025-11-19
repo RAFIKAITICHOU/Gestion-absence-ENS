@@ -1,7 +1,7 @@
 # 🎓 Système intelligent de gestion des absences - AbsENS
 
-<img src="images/emsi1.png" alt="Logo EMSI" width="150"/>
-<img src="images/ens.png" alt="Logo ENS" width="150" align="right"/>
+<img src="web/gestion-abs/images/emsi1.png" alt="Logo EMSI" width="150"/>
+<img src="web/gestion-abs/images/ens.png" alt="Logo ENS" width="150" align="right"/>
 
 ---
 ## Architecture du dossier
@@ -11,10 +11,7 @@ app
    |-mobile (android)
    |-web    (Laravel)
    |-Système électronique
-Docs
-   |- Cahier des charges
-   |- Conception
-   |- Rapport de Projet de Fin d’Études
+
 ```
 ---
 
@@ -60,7 +57,7 @@ Le système est basé sur une **architecture modulaire** et intègre des composa
 
 ### 🔹 Diagramme de calsse
 
-![calsse](web/gestion-absimages/calss.png)
+![calsse](web/gestion-abs/images/calss.png)
 
 <!-- ### 🔹 Architecture globale -->
 
@@ -73,8 +70,8 @@ Le système est basé sur une **architecture modulaire** et intègre des composa
 - **Étudiant** : AIT ICHOU Rafik  
 - **Encadrant** : Pr. NAIT MALEK Youssef (ENS Marrakech)  
 - **Établissements** :  
-  <img src="web/gestion-absimages/emsi1.png" width="100"/> EMSI Marrakech  
-  <img src="web/gestion-absimages/ens.png" width="100"/> ENS Marrakech
+  <img src="web/gestion-abs/images/emsi1.png" width="100"/> EMSI Marrakech  
+  <img src="web/gestion-abs/images/ens.png" width="100"/> ENS Marrakech
 
 ---
 
