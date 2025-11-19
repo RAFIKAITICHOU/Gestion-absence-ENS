@@ -69,9 +69,11 @@ Le système est basé sur une **architecture modulaire** et intègre des composa
 
 - **Étudiant** : AIT ICHOU Rafik  
 - **Encadrant** : Pr. NAIT MALEK Youssef (ENS Marrakech)  
-- **Établissements** :  
-  <img src="web/gestion-abs/images/emsi1.png" width="100"/> EMSI Marrakech  
-  <img src="web/gestion-abs/images/ens.png" width="100"/> ENS Marrakech
+- **Établissements** :
+
+  <a href="https://emsi.ma/"><img src="web/gestion-abs/images/emsi1.png" width="100"/> EMSI Marrakech </a>
+  <a href="https://ens.uca.ma/"><img src="web/gestion-abs/images/ens.png" width="100"/> ENS Marrakech </a>
+  
 
 ---
 
